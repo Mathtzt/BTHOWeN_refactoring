@@ -3,7 +3,7 @@
 import numpy as np
 from numba import jit
 
-from bloom_filter import BloomFilter
+from .bloom_filter import BloomFilter
 
 # Converts a vector of booleans to an unsigned integer
 #  i.e. (2**0 * xv[0]) + (2**1 * xv[1]) + ... + (2**n * xv[n])

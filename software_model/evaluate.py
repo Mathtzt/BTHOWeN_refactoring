@@ -5,7 +5,7 @@ import pickle
 import lzma
 import argparse
 import numpy as np
-from train_swept_models import get_datasets, binarize_datasets, run_inference
+from .train_swept_models import get_datasets, binarize_datasets, run_inference
 
 def eval_model(model_fname, dset_name):
     print("Loading model")

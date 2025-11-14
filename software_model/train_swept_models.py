@@ -15,10 +15,10 @@ import pickle
 import lzma
 import os
 
-from wisard import WiSARD
+from .wisard import WiSARD
 
 # For the tabular datasets (all except MNIST)
-import tabular_tools
+from . import tabular_tools
 
 # Perform inference operations using provided test set on provided model with specified bleaching value (default 1)
 def run_inference(inputs, labels, model, bleach=1):
